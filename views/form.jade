@@ -1,0 +1,8 @@
+extends layout 
+
+block content 
+  form(action="/new", method="post") 
+    h2= title 
+    input(type="text", name="message", placeholder="Type your message")
+    input(type="text", name="author", placeholder="Your name")
+    button(type="submit") Send
